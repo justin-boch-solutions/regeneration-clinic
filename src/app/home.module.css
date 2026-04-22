@@ -1,0 +1,140 @@
+.hero {
+  position: relative;
+  height: 80vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.heroImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(250, 250, 249, 0.3), rgba(26, 54, 93, 0.7));
+  z-index: -1;
+}
+
+.heroContent {
+  text-align: center;
+  color: var(--white);
+  max-width: 800px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+.heroContent h1 {
+  color: var(--white);
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.heroContent p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.featuresSection {
+  background-color: var(--white);
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.featureCard {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: var(--bg-color);
+  border-radius: 8px;
+  border-top: 4px solid var(--primary-color);
+  transition: transform 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-10px);
+}
+
+.featureNumber {
+  font-size: 3rem;
+  font-family: var(--font-serif);
+  color: rgba(169, 144, 107, 0.2);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.featureCard h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.featureCard p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.infoSection {
+  background-color: var(--bg-color);
+  border-top: 1px solid var(--border-color);
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.infoContent h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.infoList {
+  list-style: none;
+  margin-top: 1.5rem;
+}
+
+.infoList li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.infoList li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+}
