@@ -1,0 +1,115 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "team": "Unser Team",
+    "patients": "Patienteninfo",
+    "contact": "Termin vereinbaren"
+  },
+  "hero": {
+    "badge": "Ihr Weg zur Heilung",
+    "title1": "Medizinische",
+    "title2": "Exzellenz",
+    "title3": "in Riga.",
+    "subtitle": "Moderne regenerative Behandlungen, hochpräzise Diagnostik und erstklassige Betreuung. Alles aus einer Hand – auf internationalem Premium-Niveau.",
+    "cta_primary": "Termin anfragen",
+    "cta_secondary": "Unsere Leistungen",
+    "stats_text": "Zufriedene internationale Privatpatienten"
+  },
+  "marquee": [
+    "✦ ISO 9001 ZERTIFIZIERT", 
+    "✦ 3.0 TESLA High-Tech Diagnostik", 
+    "✦ ÜBER 7.900 ERFOLGREICHE EINGRIFFE", 
+    "✦ INTERNATIONALE STANDARDS", 
+    "✦ EU-KOSTENÜBERNAHME MÖGLICH"
+  ],
+  "stats": {
+    "years": "Jahre Erfahrung",
+    "surgeries": "Erfolgreiche Eingriffe",
+    "tesla": "Tesla High-Tech MRT"
+  },
+  "features": {
+    "title": "Warum Regeneration Clinic?",
+    "subtitle": "Vier Säulen, auf denen Ihre Gesundheit und schnelle Genesung aufbauen.",
+    "items": [
+      { "title": "Spitzenmedizin", "desc": "Topmoderne und hochqualitative Spitzenmedizin, gepaart mit High-Tech Diagnostik direkt vor Ort." },
+      { "title": "Persönliche Betreuung", "desc": "Profitieren Sie von einer erstklassigen, familiären Versorgung und stets individueller Beratung." },
+      { "title": "Erstklassige Erfahrung", "desc": "Unsere Chefärzte verfügen über die Expertise von über 7.900 erfolgreichen operativen Eingriffen." },
+      { "title": "Absolute Diskretion", "desc": "Wir legen höchsten Wert auf Ihre Privatsphäre und bieten eine Umgebung der puren Entspannung." }
+    ]
+  },
+  "team_preview": {
+    "quote": "Medizinische Exzellenz bedeutet für uns nicht nur modernste Technik, sondern vor allem die Zeit und Hingabe für jeden einzelnen Patienten.",
+    "name": "Prof. Dr. J. Masin",
+    "role": "Chefarzt der Orthopädie & Wirbelsäulenchirurgie"
+  },
+  "journey": {
+    "subtitle": "In 3 Schritten zur Genesung",
+    "title": "Ihr Aufenthalt bei uns",
+    "step_prefix": "Schritt",
+    "items": [
+      { "title": "Erstkontakt & Beratung", "text": "Senden Sie uns Ihre MRT-Bilder bequem von Zuhause aus. Unsere Fachärzte werten diese aus und besprechen mit Ihnen via Telemedizin die beste Therapiestrategie." },
+      { "title": "Anreise & High-Tech Diagnostik", "text": "Wir empfangen Sie in Riga. Bevor Behandlungen starten, nutzen wir unsere 3.0 Tesla und 128-Zeiler CT Diagnostics für ein 100% präzises Bild Ihrer individuellen Situation." },
+      { "title": "Therapie & Heilung", "text": "Durchführung der modernsten Verfahren (z.B. minimalinvasive Schmerztherapie). Nach der Behandlung ruhen Sie in unseren luxuriösen Zimmern mit 24/7 Premium-Pflege." }
+    ]
+  },
+  "video": {
+    "title": "Medizinisches Wissen verständlich erklärt",
+    "desc": "Komplexe medizinische Zusammenhänge einfach aufbereitet. In unseren Erklärvideos bringen wir Ihnen wichtige medizinische Themen näher."
+  },
+  "reviews": {
+    "subtitle": "Erfahrungsberichte",
+    "title": "Stimmen unserer Patienten",
+    "items": [
+      { "text": "Unglaubliche medizinische Kompetenz! Von der ersten Diagnose am MRT bis hin zur Nachbehandlung fühlte ich mich perfekt aufgehoben.", "author": "Michael T.", "date": "Google Rezension" },
+      { "text": "Die weite Anreise nach Riga hat sich zu 100% gelohnt. Luxuriöses Ambiente und ein Standard, der weit über dem liegt, was ich aus Deutschland kenne.", "author": "Sarah K.", "date": "Google Rezension" },
+      { "text": "Man merkt, dass hier der Patient als Mensch im Fokus steht. Absolute Diskretion und medizinische Betreuung auf Weltklasseniveau. Danke!", "author": "Dr. Johannes B.", "date": "Google Rezension" }
+    ]
+  },
+  "premium_care": {
+    "title1": "Grenzüberschreitende",
+    "title2": "Versorgung auf Premium-Niveau",
+    "desc": "Als Patient:in aus der EU profitieren Sie von unserer Versorgung gemäß EU-Richtlinie 2011/24/EU (entsprechende Kostenübernahme durch gesetzliche Krankenkassen ist möglich).",
+    "features": [
+      { "title": "High-Tech Diagnostik", "text": "3,0 Tesla MRT, 128-Zeiler CT/PET-CT und Spektral-CT (ab 2025)." },
+      { "title": "Alles an einem Ort", "text": "Komplette Diagnostik und Therapie – stationär oder ambulant auf höchstem Standard." }
+    ],
+    "cta": "Mehr zur Erstattung erfahren"
+  },
+  "map": {
+    "title": "Ihr Weg zu uns",
+    "desc": "Zentral gelegen im medizinischen Herzen von Riga. Einfach erreichbar und perfekt ausgestattet für internationale Patienten.",
+    "address_title": "Klinik Adresse",
+    "address_line1": "Regeneration Clinic",
+    "address_line2": "Jāņa Asara iela 3",
+    "address_line3": "LV-1009 Rīga, Lettland",
+    "contact_title": "24/7 Kontakt"
+  },
+  "services_page": {
+    "title": "Unsere Medizinischen Leistungen",
+    "subtitle": "Hochpräzise Diagnostik und minimalinvasive Therapiekonzepte auf weltweitem Premium-Niveau.",
+    "categories": {
+      "diagnostics": {
+        "title": "High-Tech Diagnostik",
+        "items": [
+          { "name": "3.0 Tesla MRT", "desc": "Höchste Bildauflösung für Weichteile, Gelenke und die Wirbelsäule ohne Strahlenbelastung." },
+          { "name": "Spektral-CT (ab 2025)", "desc": "Ultraschnelle 128-Zeiler Bildgebung der modernsten Generation für präziseste chirurgische Planung." }
+        ]
+      },
+      "therapy": {
+        "title": "Regenerative Therapie",
+        "items": [
+          { "name": "Stammzellentherapie", "desc": "Autologe Stammzellen zur natürlichen Regeneration von Knorpel- und Gelenkstrukturen." },
+          { "name": "Minimalinvasive Schmerztherapie", "desc": "Gezielte, bildgesteuerte Eingriffe an der Wirbelsäule zur sofortigen Schmerzlinderung." }
+        ]
+      },
+      "surgery": {
+        "title": "Operative Eingriffe",
+        "items": [
+          { "name": "Bandscheiben-Chirurgie", "desc": "Mikrochirurgische Eingriffe mit modernsten robotischen Assistenzsystemen." },
+          { "name": "Gelenkersatz", "desc": "Maßgeschneiderte Endoprothetik mit minimalem Gewebe-Trauma." }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "team": "Our Team",
+    "patients": "Patient Info",
+    "contact": "Book Appointment"
+  },
+  "hero": {
+    "badge": "Your Path to Healing",
+    "title1": "Medical",
+    "title2": "Excellence",
+    "title3": "in Riga.",
+    "subtitle": "Modern regenerative treatments, high-precision diagnostics, and first-class care. Everything under one roof – at an international premium level.",
+    "cta_primary": "Request Appointment",
+    "cta_secondary": "Our Services",
+    "stats_text": "Satisfied international private patients"
+  },
+  "marquee": [
+    "✦ ISO 9001 CERTIFIED", 
+    "✦ 3.0 TESLA High-Tech Diagnostics", 
+    "✦ OVER 7,900 SUCCESSFUL PROCEDURES", 
+    "✦ INTERNATIONAL STANDARDS", 
+    "✦ EU COST REIMBURSEMENT POSSIBLE"
+  ],
+  "stats": {
+    "years": "Years of Experience",
+    "surgeries": "Successful Procedures",
+    "tesla": "Tesla High-Tech MRI"
+  },
+  "features": {
+    "title": "Why Regeneration Clinic?",
+    "subtitle": "Four pillars on which your health and rapid recovery are built.",
+    "items": [
+      { "title": "Cutting-Edge Medicine", "desc": "State-of-the-art and high-quality top medicine, coupled with high-tech diagnostics directly on site." },
+      { "title": "Personal Care", "desc": "Benefit from first-class, familiar care and completely individual advice." },
+      { "title": "First-Class Experience", "desc": "Our chief physicians have the expertise of over 7,900 successful surgical procedures." },
+      { "title": "Absolute Discretion", "desc": "We place the highest value on your privacy and offer an environment of pure relaxation." }
+    ]
+  },
+  "team_preview": {
+    "quote": "For us, medical excellence means not only the latest technology, but above all the time and dedication for every single patient.",
+    "name": "Prof. Dr. J. Masin",
+    "role": "Chief Physician of Orthopedics & Spinal Surgery"
+  },
+  "journey": {
+    "subtitle": "In 3 Steps to Recovery",
+    "title": "Your Stay With Us",
+    "step_prefix": "Step",
+    "items": [
+      { "title": "Initial Contact & Consultation", "text": "Send us your MRI images conveniently from home. Our specialists evaluate them and discuss the best therapy strategy with you via telemedicine." },
+      { "title": "Arrival & High-Tech Diagnostics", "text": "We welcome you to Riga. Before treatments start, we use our 3.0 Tesla and 128-slice CT Diagnostics for a 100% precise picture of your individual situation." },
+      { "title": "Therapy & Healing", "text": "Execution of the most modern procedures (e.g., minimally invasive pain therapy). After the treatment, you rest in our luxurious rooms with 24/7 premium care." }
+    ]
+  },
+  "video": {
+    "title": "Medical Knowledge Explained Simply",
+    "desc": "Complex medical relationships prepared simply. In our explainer videos, we bring important medical topics closer to you."
+  },
+  "reviews": {
+    "subtitle": "Testimonials",
+    "title": "Voices of Our Patients",
+    "items": [
+      { "text": "Incredible medical competence! From the first diagnosis on the MRI to the aftercare, I felt perfectly looked after.", "author": "Michael T.", "date": "Google Review" },
+      { "text": "The long journey to Riga was 100% worth it. Luxurious ambiance and a standard far above what I know from home.", "author": "Sarah K.", "date": "Google Review" },
+      { "text": "You can tell that the focus here is strictly on the patient as a human being. Absolute discretion and medical care at a world-class level. Thank you!", "author": "Dr. Johannes B.", "date": "Google Review" }
+    ]
+  },
+  "premium_care": {
+    "title1": "Cross-Border",
+    "title2": "Care at a Premium Level",
+    "desc": "As a patient from the EU, you benefit from our care in accordance with EU Directive 2011/24/EU (corresponding cost absorption by statutory health insurance is possible).",
+    "features": [
+      { "title": "High-Tech Diagnostics", "text": "3.0 Tesla MRI, 128-slice CT/PET-CT and Spectral-CT (from 2025)." },
+      { "title": "Everything in one place", "text": "Complete diagnostics and therapy – inpatient or outpatient at the highest standard." }
+    ],
+    "cta": "Learn more about reimbursement"
+  },
+  "map": {
+    "title": "Your Way to Us",
+    "desc": "Centrally located in the medical heart of Riga. easily accessible and perfectly equipped for international patients.",
+    "address_title": "Clinic Address",
+    "address_line1": "Regeneration Clinic",
+    "address_line2": "Jāņa Asara iela 3",
+    "address_line3": "LV-1009 Rīga, Latvia",
+    "contact_title": "24/7 Contact"
+  },
+  "services_page": {
+    "title": "Our Medical Services",
+    "subtitle": "High-precision diagnostics and minimally invasive therapy concepts at a global premium level.",
+    "categories": {
+      "diagnostics": {
+        "title": "High-Tech Diagnostics",
+        "items": [
+          { "name": "3.0 Tesla MRI", "desc": "Highest image resolution for soft tissue, joints, and the spine without radiation exposure." },
+          { "name": "Spectral-CT (from 2025)", "desc": "Ultra-fast 128-slice imaging of the most modern generation for the most precise surgical planning." }
+        ]
+      },
+      "therapy": {
+        "title": "Regenerative Therapy",
+        "items": [
+          { "name": "Stem Cell Therapy", "desc": "Autologous stem cells for the natural regeneration of cartilage and joint structures." },
+          { "name": "Minimally invasive pain therapy", "desc": "Targeted, image-guided interventions on the spine for immediate pain relief." }
+        ]
+      },
+      "surgery": {
+        "title": "Surgical Interventions",
+        "items": [
+          { "name": "Spinal Disc Surgery", "desc": "Microsurgical interventions with state-of-the-art robotic assistance systems." },
+          { "name": "Joint Replacement", "desc": "Tailor-made joint replacement with minimal tissue trauma." }
+        ]
+      }
+    }
+  }
+}

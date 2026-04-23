@@ -1,7 +1,10 @@
 import type { Metadata } from 'next';
-import './globals.css';
+import '../globals.css';
 import Link from 'next/link';
 import Image from 'next/image';
+import Navbar from '@/components/Navbar';
+import BottomTabBar from '@/components/BottomTabBar';
+import CustomCursor from '@/components/CustomCursor';
 
 export const metadata: Metadata = {
   title: 'Regeneration Clinic | Medizinische Exzellenz in Riga',
@@ -10,35 +13,21 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: { lang: string };
 }) {
   return (
-    <html lang="de">
+    <html lang={params.lang || 'de'}>
+      <head>
+        <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#1a365d" media="(prefers-color-scheme: dark)" />
+      </head>
       <body>
-        <nav className="navbar">
-          <div className="nav-container">
-            <Link href="/" style={{ display: 'flex', alignItems: 'center' }}>
-              <Image 
-                src="/images/Logo-light.jpg" 
-                alt="Regeneration Clinic Logo" 
-                width={200} 
-                height={100} 
-                priority
-                style={{ objectFit: 'contain', mixBlendMode: 'multiply' }}
-              />
-            </Link>
-            <div className="nav-links">
-              <Link href="/">Startseite</Link>
-              <Link href="/leistungen">Leistungen</Link>
-              <Link href="/team">Unser Team</Link>
-              <Link href="/patienten">Patienteninfo</Link>
-              <Link href="/kontakt" className="btn btn-primary" style={{ padding: '0.6rem 2rem', borderRadius: '30px' }}>
-                Termin vereinbaren
-              </Link>
-            </div>
-          </div>
-        </nav>
+        <CustomCursor />
+        <Navbar />
+        <BottomTabBar />
         
         <main>{children}</main>
 

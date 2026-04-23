@@ -1,0 +1,115 @@
+{
+  "nav": {
+    "home": "Sākums",
+    "services": "Pakalpojumi",
+    "team": "Mūsu Komanda",
+    "patients": "Pacientiem",
+    "contact": "Pieteikties Vizītei"
+  },
+  "hero": {
+    "badge": "Jūsu Ceļš uz Atveseļošanos",
+    "title1": "Medicīniskā",
+    "title2": "Izcilība",
+    "title3": "Rīgā.",
+    "subtitle": "Modernas reģeneratīvās procedūras, augstas precizitātes diagnostika un pirmklasīga aprūpe. Viss vienuviet – starptautiskā premium līmenī.",
+    "cta_primary": "Pieteikties Vizītei",
+    "cta_secondary": "Mūsu Pakalpojumi",
+    "stats_text": "Apmierināti starptautiskie privātpacienti"
+  },
+  "marquee": [
+    "✦ ISO 9001 SERTIFICĒTS", 
+    "✦ 3.0 TESLA High-Tech Diagnostika", 
+    "✦ VAIRĀK NEKĀ 7.900 VEIKSMĪGAS PROCEDŪRAS", 
+    "✦ STARPTAUTISKIE STANDARTI", 
+    "✦ IESPĒJAMA ES IZMAKSU KOMPENSĀCIJA"
+  ],
+  "stats": {
+    "years": "Gadu Pieredze",
+    "surgeries": "Veiksmīgas Procedūras",
+    "tesla": "Tesla High-Tech MRI"
+  },
+  "features": {
+    "title": "Kāpēc Izvēlēties Reģenerācijas Klīniku?",
+    "subtitle": "Četri pīlāri, uz kuriem balstās jūsu veselība un ātra atveseļošanās.",
+    "items": [
+      { "title": "Progresīva Medicīna", "desc": "Vismodernākā un augstākās kvalitātes medicīna apvienojumā ar augsto tehnoloģiju diagnostiku uz vietas." },
+      { "title": "Personīgā Aprūpe", "desc": "Gūstiet labumu no pirmklasīgas, ģimeniskas aprūpes un pilnīgi individuālām konsultācijām." },
+      { "title": "Pirmklasīga Pieredze", "desc": "Mūsu galvenajiem ārstiem ir pieredze no vairāk nekā 7.900 veiksmīgām ķirurģiskām procedūrām." },
+      { "title": "Absolūta Diskrētība", "desc": "Mēs piešķiram visaugstāko vērtību jūsu privātumam un piedāvājam pilnīgas atpūtas doto vidi." }
+    ]
+  },
+  "team_preview": {
+    "quote": "Mums medicīniskā izcilība nozīmē ne tikai jaunākās tehnoloģijas, bet galvenokārt laiku un atdevi katram pacientam.",
+    "name": "Prof. Dr. J. Masin",
+    "role": "Ortopēdijas un mugurkaula ķirurģijas galvenais ārsts"
+  },
+  "journey": {
+    "subtitle": "3 Soļos Līdz Atveseļošanās",
+    "title": "Jūsu Uzturēšanās Pie Mums",
+    "step_prefix": "Solis",
+    "items": [
+      { "title": "Sākotnējais Kontakts un Konsultācija", "text": "Nosūtiet mums savus MRI attēlus ērti no mājām. Mūsu speciālisti tos novērtē un caur telemedicīnu apspriež ar jums labāko terapijas stratēģiju." },
+      { "title": "Ierašanās un Augsto Tehnoloģiju Diagnostika", "text": "Mēs jūs gaidām Rīgā. Pirms ārstēšanas mēs izmantojam mūsu 3.0 Tesla un 128-slāņu CT Diagnostiku, lai iegūtu 100% precīzu ainu." },
+      { "title": "Terapija un Ārstēšana", "text": "Vismodernāko procedūru (piem., minimāli invazīvas sāpju terapijas) izpilde. Pēc ārstēšanas atpūšaties mūsu luksusa numuros ar 24/7 premium aprūpi." }
+    ]
+  },
+  "video": {
+    "title": "Medicīnas Zināšanas Paskaidrotas Vienkārši",
+    "desc": "Sarežģītas medicīniskās attiecības ir sagatavotas vienkārši. Mūsu skaidrojošajos video mēs tuvāk aplūkojam svarīgas medicīnas tēmas."
+  },
+  "reviews": {
+    "subtitle": "Atsauksmes",
+    "title": "Mūsu Pacientu Balsis",
+    "items": [
+      { "text": "Neticama medicīniskā kompetence! Sākot no pirmās diagnozes MR līdz pat pēcaprūpei, es jutos lieliski aprūpēts.", "author": "Mihaels T.", "date": "Google Atsauksme" },
+      { "text": "Tālais ceļojums uz Rīgu bija 100% tā vērts. Luksusa gaisotne un standarts, kas ir tālu virs manas valsts zināmā.", "author": "Sāra K.", "date": "Google Atsauksme" },
+      { "text": "Zināms, ka uzmanība šeit tiek pievērsta pacientam kā cilvēkam. Absolūta diskrētība un pasaules līmeņa medicīniskā aprūpe. Paldies!", "author": "Dr. Johanness B.", "date": "Google Atsauksme" }
+    ]
+  },
+  "premium_care": {
+    "title1": "Starprobežu",
+    "title2": "Aprūpe Premium Līmenī",
+    "desc": "Kā pacients no ES, jūs gūstat labumu no mūsu aprūpes saskaņā ar ES Direktīvu 2011/24/ES.",
+    "features": [
+      { "title": "Augsto Tehnoloģiju Diagnostika", "text": "3.0 Tesla MRI, 128-slāņu CT/PET-CT un Spektrālā-CT (no 2025. gada)." },
+      { "title": "Viss vienā vietā", "text": "Pilnīga diagnostika un terapija - stacionārā vai ambulatori augstākajā līmenī." }
+    ],
+    "cta": "Uzzināt vairāk par kompensāciju"
+  },
+  "map": {
+    "title": "Tavs Ceļš pie Mums",
+    "desc": "Centrāli izvietots Rīgas medicīniskajā sirdī. Viegli pieejams un lieliski pielāgots starptautiskajiem pacientiem.",
+    "address_title": "Klīnikas Adrese",
+    "address_line1": "Regeneration Clinic",
+    "address_line2": "Jāņa Asara iela 3",
+    "address_line3": "LV-1009 Rīga, Latvija",
+    "contact_title": "24/7 Kontaktinformācija"
+  },
+  "services_page": {
+    "title": "Mūsu Medicīniskie Pakalpojumi",
+    "subtitle": "Augstas precizitātes diagnostika un minimāli invazīvas terapijas koncepcijas pasaules premium līmenī.",
+    "categories": {
+      "diagnostics": {
+        "title": "Augsto Tehnoloģiju Diagnostika",
+        "items": [
+          { "name": "3.0 Tesla MR", "desc": "Visaugstākā attēlu izšķirtspēja mīkstajiem audiem, locītavām un mugurkaulam bez starojuma." },
+          { "name": "Spektrālā-CT (no 2025. gada)", "desc": "Īpaši ātra 128-slāņu attēlveidošana no vismodernākās paaudzes visprecīzākajai ķirurģiskajai plānošanai." }
+        ]
+      },
+      "therapy": {
+        "title": "Reģeneratīvā Terapija",
+        "items": [
+          { "name": "Cilmes Šūnu Terapija", "desc": "Autologās cilmes šūnas dabiskai skrimšļu un locītavu struktūru reģenerācijai." },
+          { "name": "Minimāli invazīva sāpju terapija", "desc": "Mērķtiecīgas, attēlu vadītas iejaukšanās mugurkaulā tūlītējai sāpju mazināšanai." }
+        ]
+      },
+      "surgery": {
+        "title": "Ķirurģiskās Iejaukšanās",
+        "items": [
+          { "name": "Mugurkaula Disku Ķirurģija", "desc": "Mikroķirurģiskas iejaukšanās ar vismodernākajām robotiskajām palīdzības sistēmām." },
+          { "name": "Locītavu Endoprotezēšana", "desc": "Pielāgota locītavu protezēšana ar minimālu audu traumu." }
+        ]
+      }
+    }
+  }
+}
