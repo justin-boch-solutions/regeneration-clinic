@@ -11,15 +11,18 @@ export const metadata: Metadata = {
   description: 'Regeneration Clinic bietet moderne regenerative Behandlungen mit individueller Betreuung, innovativen Therapiekonzepten und höchster Diskretion.',
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }) {
+  const resolvedParams = await Promise.resolve(params);
+  const lang = resolvedParams?.lang || 'de';
+
   return (
-    <html lang={params.lang || 'de'}>
+    <html lang={lang}>
       <head>
         <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
         <meta name="theme-color" content="#1a365d" media="(prefers-color-scheme: dark)" />
