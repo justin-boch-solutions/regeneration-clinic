@@ -4,7 +4,8 @@
     "services": "Leistungen",
     "team": "Unser Team",
     "patients": "Patienteninfo",
-    "contact": "Termin vereinbaren"
+    "contact": "Termin vereinbaren",
+    "minst": "MINST Institute"
   },
   "hero": {
     "badge": "Ihr Weg zur Heilung",
@@ -110,6 +111,53 @@
           { "name": "Gelenkersatz", "desc": "Maßgeschneiderte Endoprothetik mit minimalem Gewebe-Trauma." }
         ]
       }
+    }
+  },
+  "contact_page": {
+    "title": "VIP Kontakt & Termin",
+    "subtitle": "Vereinbaren Sie Ihren individuellen Beratungstermin. Wir behandeln Ihre Anfrage mit höchster Diskretion.",
+    "form": {
+      "name": "Vollständiger Name",
+      "email": "Ihre E-Mail Adresse",
+      "phone": "Telefonnummer (Optional)",
+      "department": "Gewünschte Fachrichtung",
+      "departments": {
+        "ortho": "Orthopädie",
+        "neuro": "Neurochirurgie",
+        "pain": "Schmerztherapie",
+        "other": "Sonstiges"
+      },
+      "date": "Wunschdatum",
+      "message": "Ihre Beschwerde / Nachricht",
+      "submit": "Termin verbindlich anfragen",
+      "success": "Vielen Dank. Ihre Anfrage wurde erfolgreich übermittelt. Wir melden uns in Kürze."
+    }
+  },
+  "minst": {
+    "title": "Medical Institute for Nutrition Science and Technology",
+    "badge": "Wissenschaft & Innovation",
+    "intro": "Wir sind ein führendes Forschungsinstitut im Bereich Ernährungswissenschaften und Technologie, das sich der Verschmelzung von Gesundheitsmedizin und technologischer Innovation verschrieben hat, um die öffentliche Gesundheit und das Wohlbefinden zu verbessern. Unsere Mission ist es, bahnbrechende Forschung zu nutzen, um neue Erkenntnisse und Technologien zu entwickeln.",
+    "history": "Der intellektuelle Grundstein für die Gründung des MINST wurde Anfang 2020 gelegt. Bei der Festlegung unserer Mission wurde unmissverständlich festgestellt, dass interdisziplinäre Zusammenarbeit unerlässlich ist und wir historische Disziplinengrenzen überwinden müssen, um vereinte wissenschaftliche Anstrengungen zu fördern.",
+    "research": {
+      "title": "Forschung & Auftragsforschung",
+      "text": "An unserem Institut engagiert sich ein multidisziplinäres Expertenteam dafür, das Verständnis dafür zu vertiefen, wie sich Ernährung auf die menschliche Gesundheit auswirkt. Durch rigorose Forschung und Entwicklung zielen wir darauf ab, wissenschaftliche Entdeckungen in praktische Anwendungen umzusetzen.",
+      "points": [
+        {"title": "Ernährungsinterventionen", "text": "Entwicklung und Vorantreiben von Ernährungsstrategien, die chronische Krankheiten behandeln oder verhindern können."},
+        {"title": "Technologische Innovationen", "text": "Nutzung von Technologie zur Verbesserung der Bereitstellung und Wirksamkeit ernährungsbezogener Gesundheitsdienste."}
+      ]
+    },
+    "teaching": {
+      "title": "Lehre & Patientenbetreuung",
+      "text": "Durch die Integration von Wissenschaft und Technologie strebt unser Institut danach, eine gesündere Zukunft für alle zu schaffen. Unsere Arbeit wird von dem Prinzip geleitet, dass richtige Ernährung ein Eckpfeiler der präventiven Gesundheit und einer wirksamen medizinischen Behandlung ist.",
+      "points": [
+        {"title": "Personalisierte Ernährung", "text": "Untersuchung genetischer, metabolischer und umweltbedingter Faktoren zur Anpassung von Ernährungsempfehlungen."},
+        {"title": "Interdisziplinäre Lösungen", "text": "Wir erleichtern zielgerichtete und synergistische Kooperationen zwischen medizinischen und technologischen Projekten."}
+      ]
+    },
+    "team": {
+      "title": "Das Akademische Team",
+      "text": "Mit der Einweihung unseres Instituts widmet sich ein ehrgeiziges Team von Wissenschaftlern und Forschern der Wegbereitung fortschrittlicher Entwicklungen.",
+      "team_desc": "Unter der Leitung von Prof. Dr. M. Masin wird die Abteilung 'Klinische Ernährung & Diabetologie' aufgebaut. MINST erforscht und entwickelt Ernährungstherapien für zahlreiche Erkrankungen wie Mangelernährung, Kachexie und Malabsorption, flankiert von fortschrittlichen technischen Überwachungsprogrammen."
     }
   }
 }

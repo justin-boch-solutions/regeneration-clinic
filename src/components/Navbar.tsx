@@ -16,9 +16,9 @@ export default function Navbar() {
   const lang = (pathname ? pathname.split('/')[1] : 'de') as 'de' | 'en' | 'lv';
 
   const navDict = {
-    de: { home: "Startseite", services: "Leistungen", team: "Unser Team", patients: "Patienteninfo", contact: "Termin vereinbaren" },
-    en: { home: "Home", services: "Services", team: "Our Team", patients: "Patient Info", contact: "Book Appointment" },
-    lv: { home: "Sākums", services: "Pakalpojumi", team: "Mūsu Komanda", patients: "Pacientiem", contact: "Pieteikties Vizītei" }
+    de: { home: "Startseite", services: "Leistungen", team: "Unser Team", patients: "Patienteninfo", contact: "Termin vereinbaren", minst: "MINST Institute" },
+    en: { home: "Home", services: "Services", team: "Our Team", patients: "Patient Info", contact: "Book Appointment", minst: "MINST Institute" },
+    lv: { home: "Sākums", services: "Pakalpojumi", team: "Mūsu Komanda", patients: "Pacientiem", contact: "Pieteikties Vizītei", minst: "MINST Institūts" }
   };
   const t = navDict[lang] || navDict.de;
 
@@ -52,31 +52,38 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* Desktop Links (Hidden on Mobile) */}
-        <div className="desktop-links">
-          <Link href={`/${lang}/`}>{t.home}</Link>
-          <Link href={`/${lang}/leistungen`}>{t.services}</Link>
-          <Link href={`/${lang}/team`}>{t.team}</Link>
-          <Link href={`/${lang}/patienten`}>{t.patients}</Link>
+        {/* RIGHT SIDE NAV CONTAINER */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
           
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginLeft: '1rem' }}>
+          {/* Desktop Links (Hidden on Mobile) */}
+          <div className="desktop-links">
+            <Link href={`/${lang}/`}>{t.home}</Link>
+            <Link href={`/${lang}/leistungen`}>{t.services}</Link>
+            <Link href={`/${lang}/team`}>{t.team}</Link>
+            <Link href={`/${lang}/news`}>{lang === 'de' ? 'News' : lang === 'en' ? 'News' : 'Jaunumi'}</Link>
+            <Link href={`/${lang}/patienten`}>{t.patients}</Link>
+            
+            <Magnetic strength={0.3} radius={60}>
+              <Link href={`/${lang}/kontakt`} className="btn btn-primary" style={{ padding: '0.6rem 2rem', borderRadius: '30px', display: 'inline-block' }}>
+                {t.contact}
+              </Link>
+            </Magnetic>
+          </div>
+
+          {/* Global Nav Actions (Visible Everywhere) */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
             <ThemeToggle />
             <select 
               value={lang} 
               onChange={(e) => switchLanguage(e.target.value)}
-              style={{ appearance: 'none', background: 'transparent', border: '1px solid var(--border-color)', padding: '0.3rem 0.8rem', borderRadius: '20px', fontSize: '0.85rem', cursor: 'pointer', fontFamily: 'var(--font-sans)', fontWeight: 500, color: 'var(--secondary-color)' }}
+              style={{ appearance: 'none', background: 'transparent', border: '1px solid var(--border-color)', padding: '0.3rem 0.6rem', borderRadius: '20px', fontSize: '0.85rem', cursor: 'pointer', fontFamily: 'var(--font-sans)', fontWeight: 500, color: 'var(--secondary-color)' }}
             >
-              <option value="de">DE 🇩🇪</option>
-              <option value="en">EN 🇬🇧</option>
-              <option value="lv">LV 🇱🇻</option>
+              <option value="de">DE</option>
+              <option value="en">EN</option>
+              <option value="lv">LV</option>
             </select>
           </div>
 
-          <Magnetic strength={0.3} radius={60}>
-            <Link href={`/${lang}/kontakt`} className="btn btn-primary" style={{ padding: '0.6rem 2rem', borderRadius: '30px', display: 'inline-block' }}>
-              {t.contact}
-            </Link>
-          </Magnetic>
         </div>
       </div>
     </nav>

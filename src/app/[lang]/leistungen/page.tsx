@@ -32,84 +32,92 @@ export default async function Leistungen({ params }: { params: Promise<{ lang: '
 
       {/* CATEGORIES SECTION */}
       <section style={{ padding: '4rem 0 8rem 0', position: 'relative', zIndex: 20 }}>
-        <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '6rem' }}>
+        <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '8rem' }}>
           
           {/* DIAGNOSTICS */}
-          <div style={{ position: 'relative' }}>
-            <ScrollReveal direction="none" style={{ marginBottom: '3rem', borderBottom: '1px solid var(--border-color)', paddingBottom: '1rem' }}>
-              <h2 style={{ fontSize: '2.5rem', color: 'var(--secondary-color)', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <span style={{ color: 'var(--primary-color)', fontSize: '1.5rem' }}>✧</span> {srv.categories.diagnostics.title}
-              </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '4rem', alignItems: 'center' }}>
+            <ScrollReveal direction="left" style={{ position: 'relative', height: '500px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 50px rgba(0,0,0,0.1)' }}>
+                <Image src="/images/mri.png" alt="High-Tech Diagnostik" fill style={{ objectFit: 'cover' }} />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.5), transparent)' }}></div>
             </ScrollReveal>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '2rem' }}>
-              
-              <ScrollReveal direction="right" style={{ gridColumn: '1 / -1', marginBottom: '1rem' }}>
-                <div style={{ position: 'relative', width: '100%', height: '350px', borderRadius: '15px', overflow: 'hidden' }}>
-                    <Image src="/images/mri.png" alt="High-Tech Diagnostik" fill style={{ objectFit: 'cover' }} />
-                    <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.7), transparent)' }}></div>
-                </div>
+            
+            <div>
+              <ScrollReveal direction="up" style={{ marginBottom: '2rem' }}>
+                <span style={{ color: 'var(--primary-color)', fontSize: '1.2rem', fontWeight: 600, letterSpacing: '2px', textTransform: 'uppercase' }}>01.</span>
+                <h2 style={{ fontSize: '3rem', color: 'var(--secondary-color)', marginTop: '0.5rem', marginBottom: '2rem' }}>
+                  {srv.categories.diagnostics.title}
+                </h2>
+                <div style={{ height: '3px', width: '50px', background: 'var(--primary-color)', marginBottom: '3rem' }}></div>
               </ScrollReveal>
-
-              {srv.categories.diagnostics.items.map((item, i) => (
-                <ScrollReveal key={i} delay={i * 150} direction="up">
-                  <TiltCard className="card interactive" style={{ padding: '3rem 2.5rem', height: '100%', background: 'var(--white)' }}>
-                    <h3 style={{ fontSize: '1.4rem', color: 'var(--secondary-color)', marginBottom: '1rem' }}>{item.name}</h3>
-                    <p style={{ color: 'var(--text-light)', fontSize: '1.05rem', margin: 0, lineHeight: 1.7 }}>{item.desc}</p>
-                  </TiltCard>
-                </ScrollReveal>
-              ))}
+              
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+                {srv.categories.diagnostics.items.map((item, i) => (
+                  <ScrollReveal key={i} delay={i * 150} direction="up">
+                    <TiltCard className="card interactive" style={{ padding: '2.5rem', background: 'var(--white)', borderLeft: '4px solid var(--primary-color)' }}>
+                      <h3 style={{ fontSize: '1.5rem', color: 'var(--secondary-color)', marginBottom: '1rem' }}>{item.name}</h3>
+                      <p style={{ color: 'var(--text-light)', fontSize: '1.1rem', margin: 0, lineHeight: 1.7 }}>{item.desc}</p>
+                    </TiltCard>
+                  </ScrollReveal>
+                ))}
+              </div>
             </div>
           </div>
 
-          {/* THERAPY */}
-          <div style={{ position: 'relative' }}>
-            <ScrollReveal direction="none" style={{ marginBottom: '3rem', borderBottom: '1px solid var(--border-color)', paddingBottom: '1rem' }}>
-              <h2 style={{ fontSize: '2.5rem', color: 'var(--secondary-color)', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <span style={{ color: 'var(--primary-color)', fontSize: '1.5rem' }}>✧</span> {srv.categories.therapy.title}
-              </h2>
+          {/* THERAPY (Alternating) */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '4rem', alignItems: 'center', direction: 'rtl' }}>
+            <ScrollReveal direction="right" style={{ position: 'relative', height: '500px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 50px rgba(0,0,0,0.1)', direction: 'ltr' }}>
+                <Image src="/images/image002.jpg" alt="Regenerative Therapie" fill style={{ objectFit: 'cover' }} />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.5), transparent)' }}></div>
             </ScrollReveal>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '2rem' }}>
-              <ScrollReveal direction="right" style={{ gridColumn: '1 / -1', marginBottom: '1rem' }}>
-                  <div style={{ position: 'relative', width: '100%', height: '350px', borderRadius: '15px', overflow: 'hidden' }}>
-                      <Image src="/images/image002.jpg" alt="Regenerative Therapie" fill style={{ objectFit: 'cover' }} />
-                      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.6), transparent)' }}></div>
-                  </div>
+            
+            <div style={{ direction: 'ltr' }}>
+              <ScrollReveal direction="up" style={{ marginBottom: '2rem' }}>
+                <span style={{ color: 'var(--primary-color)', fontSize: '1.2rem', fontWeight: 600, letterSpacing: '2px', textTransform: 'uppercase' }}>02.</span>
+                <h2 style={{ fontSize: '3rem', color: 'var(--secondary-color)', marginTop: '0.5rem', marginBottom: '2rem' }}>
+                  {srv.categories.therapy.title}
+                </h2>
+                <div style={{ height: '3px', width: '50px', background: 'var(--primary-color)', marginBottom: '3rem' }}></div>
               </ScrollReveal>
-                
-              {srv.categories.therapy.items.map((item, i) => (
-                <ScrollReveal key={i} delay={i * 150} direction="up">
-                  <TiltCard className="card interactive" style={{ padding: '3rem 2.5rem', height: '100%', background: 'var(--white)' }}>
-                    <h3 style={{ fontSize: '1.4rem', color: 'var(--secondary-color)', marginBottom: '1rem' }}>{item.name}</h3>
-                    <p style={{ color: 'var(--text-light)', fontSize: '1.05rem', margin: 0, lineHeight: 1.7 }}>{item.desc}</p>
-                  </TiltCard>
-                </ScrollReveal>
-              ))}
+              
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+                {srv.categories.therapy.items.map((item, i) => (
+                  <ScrollReveal key={i} delay={i * 150} direction="up">
+                    <TiltCard className="card interactive" style={{ padding: '2.5rem', background: 'var(--white)', borderLeft: '4px solid var(--primary-color)' }}>
+                      <h3 style={{ fontSize: '1.5rem', color: 'var(--secondary-color)', marginBottom: '1rem' }}>{item.name}</h3>
+                      <p style={{ color: 'var(--text-light)', fontSize: '1.1rem', margin: 0, lineHeight: 1.7 }}>{item.desc}</p>
+                    </TiltCard>
+                  </ScrollReveal>
+                ))}
+              </div>
             </div>
           </div>
 
           {/* SURGERY */}
-          <div style={{ position: 'relative' }}>
-            <ScrollReveal direction="none" style={{ marginBottom: '3rem', borderBottom: '1px solid var(--border-color)', paddingBottom: '1rem' }}>
-              <h2 style={{ fontSize: '2.5rem', color: 'var(--secondary-color)', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <span style={{ color: 'var(--primary-color)', fontSize: '1.5rem' }}>✧</span> {srv.categories.surgery.title}
-              </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '4rem', alignItems: 'center' }}>
+            <ScrollReveal direction="left" style={{ position: 'relative', height: '500px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 50px rgba(0,0,0,0.1)' }}>
+                <Image src="/images/image014.jpg" alt="Operative Eingriffe" fill style={{ objectFit: 'cover' }} />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.5), transparent)' }}></div>
             </ScrollReveal>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '2rem' }}>
-              <ScrollReveal direction="right" style={{ gridColumn: '1 / -1', marginBottom: '1rem' }}>
-                  <div style={{ position: 'relative', width: '100%', height: '350px', borderRadius: '15px', overflow: 'hidden' }}>
-                      <Image src="/images/image014.jpg" alt="Operative Eingriffe" fill style={{ objectFit: 'cover' }} />
-                      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.6), transparent)' }}></div>
-                  </div>
+            
+            <div>
+              <ScrollReveal direction="up" style={{ marginBottom: '2rem' }}>
+                <span style={{ color: 'var(--primary-color)', fontSize: '1.2rem', fontWeight: 600, letterSpacing: '2px', textTransform: 'uppercase' }}>03.</span>
+                <h2 style={{ fontSize: '3rem', color: 'var(--secondary-color)', marginTop: '0.5rem', marginBottom: '2rem' }}>
+                  {srv.categories.surgery.title}
+                </h2>
+                <div style={{ height: '3px', width: '50px', background: 'var(--primary-color)', marginBottom: '3rem' }}></div>
               </ScrollReveal>
-
-              {srv.categories.surgery.items.map((item, i) => (
-                <ScrollReveal key={i} delay={i * 150} direction="up">
-                  <TiltCard className="card interactive" style={{ padding: '3rem 2.5rem', height: '100%', background: 'var(--white)' }}>
-                    <h3 style={{ fontSize: '1.4rem', color: 'var(--secondary-color)', marginBottom: '1rem' }}>{item.name}</h3>
-                    <p style={{ color: 'var(--text-light)', fontSize: '1.05rem', margin: 0, lineHeight: 1.7 }}>{item.desc}</p>
-                  </TiltCard>
-                </ScrollReveal>
-              ))}
+              
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+                {srv.categories.surgery.items.map((item, i) => (
+                  <ScrollReveal key={i} delay={i * 150} direction="up">
+                    <TiltCard className="card interactive" style={{ padding: '2.5rem', background: 'var(--white)', borderLeft: '4px solid var(--primary-color)' }}>
+                      <h3 style={{ fontSize: '1.5rem', color: 'var(--secondary-color)', marginBottom: '1rem' }}>{item.name}</h3>
+                      <p style={{ color: 'var(--text-light)', fontSize: '1.1rem', margin: 0, lineHeight: 1.7 }}>{item.desc}</p>
+                    </TiltCard>
+                  </ScrollReveal>
+                ))}
+              </div>
             </div>
           </div>
 

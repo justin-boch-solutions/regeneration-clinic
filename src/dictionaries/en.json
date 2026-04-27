@@ -4,7 +4,8 @@
     "services": "Services",
     "team": "Our Team",
     "patients": "Patient Info",
-    "contact": "Book Appointment"
+    "contact": "Book Appointment",
+    "minst": "MINST Institute"
   },
   "hero": {
     "badge": "Your Path to Healing",
@@ -110,6 +111,53 @@
           { "name": "Joint Replacement", "desc": "Tailor-made joint replacement with minimal tissue trauma." }
         ]
       }
+    }
+  },
+  "contact_page": {
+    "title": "VIP Contact & Appointment",
+    "subtitle": "Arrange your individual consultation. We handle your request with the utmost discretion.",
+    "form": {
+      "name": "Full Name",
+      "email": "Your Email Address",
+      "phone": "Phone Number (Optional)",
+      "department": "Required Department",
+      "departments": {
+        "ortho": "Orthopedics",
+        "neuro": "Neurosurgery",
+        "pain": "Pain Therapy",
+        "other": "Other"
+      },
+      "date": "Preferred Date",
+      "message": "Your complaint / message",
+      "submit": "Request Appointment",
+      "success": "Thank you. Your request was submitted successfully. We will get back to you shortly."
+    }
+  },
+  "minst": {
+    "title": "Medical Institute for Nutrition Science and Technology",
+    "badge": "Science & Innovation",
+    "intro": "We are a premier research institute in the field of nutritional science and technology, dedicated to merging health medicine and technological innovation to enhance public health and well-being. Our mission is to harness cutting-edge research to develop groundbreaking insights and technologies that improve nutritional practices and healthcare outcomes.",
+    "history": "The intellectual foundation for the establishment of MINST was laid at the beginning of 2020. In establishing our mission, it was unequivocally determined that interdisciplinary cooperation is imperative, requiring us to overcome historical compartmentalization to foster unified scientific efforts.",
+    "research": {
+      "title": "Research & Contract Research",
+      "text": "At our institute, a multidisciplinary team of experts is committed to advancing the understanding of how nutrition impacts human health. Through rigorous research and development, we aim to translate scientific discoveries into practical applications that can benefit individuals.",
+      "points": [
+        {"title": "Nutritional Interventions", "text": "Developing and evaluating dietary strategies that can prevent, manage, or treat chronic diseases."},
+        {"title": "Technological Innovations", "text": "Leveraging technology to improve the delivery and effectiveness of nutrition-related healthcare services."}
+      ]
+    },
+    "teaching": {
+      "title": "Teaching & Patient Care",
+      "text": "By integrating science and technology, our institute strives to create a healthier future for all. Our work is guided by the principle that proper nutrition is a cornerstone of preventive health and effective medical treatment, reflecting our commitment to enhancing health outcomes.",
+      "points": [
+        {"title": "Personalized Nutrition", "text": "Investigating genetic, metabolic, and environmental factors to tailor dietary recommendations."},
+        {"title": "Cross-Disciplinary Solutions", "text": "We facilitate targeted and synergistic collaborations between medical and technological projects."}
+      ]
+    },
+    "team": {
+      "title": "The Academic Team",
+      "text": "With our institute, an ambitious team of scientists and researchers is dedicated to pioneering progressive developments and forging new visions.",
+      "team_desc": "Under the direction of Prof. Dr. M. Masin, the Department of 'Clinical Nutrition & Diabetology' is being established. MINST researches and develops nutritional therapies for multiple diseases such as malnutrition, cachexia and malabsorption, alongside advanced technical monitoring programs."
     }
   }
 }

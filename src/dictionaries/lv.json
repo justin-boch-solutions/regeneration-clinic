@@ -4,7 +4,8 @@
     "services": "Pakalpojumi",
     "team": "Mūsu Komanda",
     "patients": "Pacientiem",
-    "contact": "Pieteikties Vizītei"
+    "contact": "Pieteikties Vizītei",
+    "minst": "MINST Institūts"
   },
   "hero": {
     "badge": "Jūsu Ceļš uz Atveseļošanos",
@@ -110,6 +111,53 @@
           { "name": "Locītavu Endoprotezēšana", "desc": "Pielāgota locītavu protezēšana ar minimālu audu traumu." }
         ]
       }
+    }
+  },
+  "contact_page": {
+    "title": "VIP Kontakti un Tikšanās",
+    "subtitle": "Noformējiet savu individuālo konsultāciju. Mēs apstrādājam jūsu pieprasījumu ar vislielāko diskrētumu.",
+    "form": {
+      "name": "Pilns Vārds",
+      "email": "Jūsu E-pasta Adrese",
+      "phone": "Tālruņa Numurs (Neobligāti)",
+      "department": "Vēlamā Nodaļa",
+      "departments": {
+        "ortho": "Ortopēdija",
+        "neuro": "Neiroķirurģija",
+        "pain": "Sāpju Terapija",
+        "other": "Cits"
+      },
+      "date": "Vēlamais Datums",
+      "message": "Jūsu sūdzība / ziņojums",
+      "submit": "Pieprasīt Tikšanos",
+      "success": "Paldies. Jūsu pieprasījums ir veiksmīgi iesniegts. Mēs drīz ar jums sazināsimies."
+    }
+  },
+  "minst": {
+    "title": "Medical Institute for Nutrition Science and Technology",
+    "badge": "Zinātne un Inovācijas",
+    "intro": "Mēs esam vadošais pētniecības institūts uzturzinātnes un tehnoloģiju jomā, kas veltīts veselības medicīnas un tehnoloģisko inovāciju apvienošanai, lai uzlabotu sabiedrības veselību. Mūsu misija ir izmantot progresīvus pētījumus, lai attīstītu novatoriskas atziņas.",
+    "history": "Intelektuālais pamats MINST izveidei tika ielikts 2020. gada sākumā. Nosakot mūsu misiju, tika nepārprotami secināts, ka starpdisciplīnu sadarbība ir obligāta, prasot pārvarēt vēsturisko sadrumstalotību, lai veicinātu vienotus zinātniskos centienus.",
+    "research": {
+      "title": "Pētniecība un Pasūtījuma Pētniecība",
+      "text": "Mūsu institūtā daudznozaru ekspertu komanda ir apņēmusies veicināt izpratni par to, kā uzturs ietekmē cilvēku veselību. Izmantojot rūpīgu izpēti, mēs cenšamies zinātniskos atklājumus pārvērst praktiskos pielietojumos.",
+      "points": [
+        {"title": "Uztura Intervences", "text": "Diētas stratēģiju izstrāde un novērtēšana, kas var novērst, pārvaldīt vai ārstēt hroniskas slimības."},
+        {"title": "Tehnoloģiskās Inovācijas", "text": "Tehnoloģiju izmantošana, lai uzlabotu ar uzturu saistītu veselības aprūpes pakalpojumu sniegšanu."}
+      ]
+    },
+    "teaching": {
+      "title": "Mācības un Pacientu Aprūpe",
+      "text": "Integrējot zinātni un tehnoloģijas, mūsu institūts cenšas radīt veselīgāku nākotni. Mūsu darbs balstās uz principu, ka pareizs uzturs ir profilaktiskās veselības un efektīvas medicīniskās ārstēšanas stūrakmens.",
+      "points": [
+        {"title": "Personalizēts Uzturs", "text": "Ģenētisko, metabolisko un vides faktoru izpēte uztura ieteikumu pielāgošanai."},
+        {"title": "Starpnozaru Risinājumi", "text": "Mēs veicinām mērķtiecīgu un sinerģisku sadarbību starp medicīnas un tehnoloģiju projektiem."}
+      ]
+    },
+    "team": {
+      "title": "Akadēmiskā Komanda",
+      "text": "Līdz ar mūsu institūtu, ambicioza zinātnieku un pētnieku komanda ir veltīta progresīvu attīstību un jaunu vīziju veidošanai.",
+      "team_desc": "Prof. Dr. M. Masina vadībā tiek veidota nodaļa 'Kliniskā uzturzinātne un diabetoloģija'. MINST pēta un izstrādā uztura terapijas tādām slimībām kā nepietiekams uzturs, kaheksija un malabsorbcija, kā arī uzlabotas tehniskās uzraudzības programmas."
     }
   }
 }
