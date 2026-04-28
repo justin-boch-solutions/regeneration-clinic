@@ -200,7 +200,7 @@ export default async function Home({ params }: { params: Promise<{ lang: 'de'|'e
             <div style={{ position: 'relative', paddingBottom: '52%', height: 0, overflow: 'hidden', borderRadius: '24px', boxShadow: '0 30px 60px rgba(0,0,0,0.5)', border: '1px solid rgba(255,255,255,0.1)' }} className="interactive">
               <iframe 
                 style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                src="https://www.youtube.com/embed/LXb3EKWsInQ?autoplay=0&mute=0&controls=1&rel=0" 
+                src="https://www.youtube.com/embed/iADW6FvFP7E?si=m68PQeVUeg07RSOP&autoplay=0&mute=0&controls=1&rel=0" 
                 title="Medizinisches Erklärvideo" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 

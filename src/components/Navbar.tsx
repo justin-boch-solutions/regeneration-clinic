@@ -82,8 +82,31 @@ export default function Navbar() {
               <option value="en">EN</option>
               <option value="lv">LV</option>
             </select>
+
+            {/* Mobile Menu Button */}
+            <button 
+              className={`mobile-menu-btn ${isOpen ? 'open' : ''}`} 
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label="Toggle mobile menu"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
           </div>
 
+        </div>
+
+        {/* Mobile Navigation Menu */}
+        <div className={`nav-links ${isOpen ? 'nav-links-open' : ''}`}>
+          <Link href={`/${lang}/`} onClick={() => setIsOpen(false)}>{t.home}</Link>
+          <Link href={`/${lang}/leistungen`} onClick={() => setIsOpen(false)}>{t.services}</Link>
+          <Link href={`/${lang}/team`} onClick={() => setIsOpen(false)}>{t.team}</Link>
+          <Link href={`/${lang}/news`} onClick={() => setIsOpen(false)}>{lang === 'de' ? 'News' : lang === 'en' ? 'News' : 'Jaunumi'}</Link>
+          <Link href={`/${lang}/patienten`} onClick={() => setIsOpen(false)}>{t.patients}</Link>
+          <Link href={`/${lang}/kontakt`} className="btn btn-primary" onClick={() => setIsOpen(false)} style={{ padding: '0.8rem 2rem', borderRadius: '30px', marginTop: '1rem' }}>
+            {t.contact}
+          </Link>
         </div>
       </div>
     </nav>
