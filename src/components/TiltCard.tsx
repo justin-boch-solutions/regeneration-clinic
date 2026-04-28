@@ -79,7 +79,7 @@ export default function TiltCard({ children, className = "", style = {} }: TiltC
         }}
       />
       {/* Ensure children stay above glare and pop out */}
-      <div style={{ transform: "translateZ(30px)", width: "100%", height: "100%" }}>
+      <div style={{ transform: "translateZ(30px)", width: "100%", height: "100%", position: "relative" }}>
         {children}
       </div>
     </div>

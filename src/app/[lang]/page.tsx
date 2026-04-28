@@ -150,42 +150,64 @@ export default async function Home({ params }: { params: Promise<{ lang: 'de'|'e
             </div>
           </ScrollReveal>
           
-          <ScrollReveal direction="left">
-            <TiltCard style={{ minHeight: '350px', height: '100%', borderRadius: '30px', boxShadow: '0 30px 60px rgba(0,0,0,0.1)' }} className="interactive">
-              <Image 
-                src="/images/image004.jpg" 
-                alt="Medizinisches Team" 
-                fill
-                quality={100}
-                sizes="(max-width: 768px) 100vw, 50vw"
-                style={{ objectFit: 'cover', borderRadius: '30px' }}
-              />
-            </TiltCard>
+          <ScrollReveal direction="left" style={{ position: 'relative', minHeight: '400px', height: '100%', borderRadius: '30px', boxShadow: '0 30px 60px rgba(0,0,0,0.1)', overflow: 'hidden' }} className="interactive">
+            <Image 
+              src="/images/image010.jpg" 
+              alt="Medizinisches Team" 
+              fill
+              quality={100}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              style={{ objectFit: 'cover' }}
+            />
           </ScrollReveal>
         </div>
       </section>
 
-      {/* PATIENT JOURNEY TIMELINE */}
-      <section className="section" style={{ backgroundColor: 'var(--bg-color)' }}>
+      {/* PATIENT JOURNEY TIMELINE (Harmonious 2-Column Layout) */}
+      <section className="section" style={{ backgroundColor: 'var(--bg-color)', position: 'relative' }}>
         <div className="container">
           <ScrollReveal>
-            <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
               <span style={{ color: 'var(--primary-color)', textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.9rem', fontWeight: 600 }}>{dict.journey.subtitle}</span>
               <h2 className="section-title">{dict.journey.title}</h2>
             </div>
           </ScrollReveal>
 
-          <div className="timeline">
-            {dict.journey.items.map((item, i) => (
-              <ScrollReveal key={i} delay={i * 200} direction="up" className="timeline-item interactive">
-                <div className="timeline-dot"></div>
-                <div className="timeline-card">
-                  <span style={{ color: 'var(--primary-color)', fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem', display: 'block' }}>{dict.journey.step_prefix} 0{i+1}</span>
-                  <h3 style={{ fontSize: '1.5rem', color: 'var(--secondary-color)', marginBottom: '1rem' }}>{item.title}</h3>
-                  <p style={{ color: 'var(--text-light)', fontSize: '1.05rem', margin: 0 }}>{item.text}</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '4rem', alignItems: 'flex-start' }}>
+            
+            {/* Visual Anchor (Sticky Image) */}
+            <ScrollReveal direction="right" style={{ position: 'sticky', top: '120px' }} className="desktop-only-sticky">
+              <div style={{ position: 'relative', width: '100%', minHeight: '600px', borderRadius: '30px', overflow: 'hidden', boxShadow: '0 30px 60px rgba(0,0,0,0.1)' }}>
+                <Image 
+                  src="/images/image011.jpg" 
+                  alt="Patientenbetreuung" 
+                  fill
+                  quality={100}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  style={{ objectFit: 'cover' }}
+                />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(26, 54, 93, 0.8), transparent 50%)' }}></div>
+                <div style={{ position: 'absolute', bottom: '2rem', left: '2rem', right: '2rem', color: 'white' }}>
+                  <h3 style={{ fontSize: '1.8rem', fontFamily: 'var(--font-serif)', marginBottom: '0.5rem', color: 'white' }}>Exzellenz in jedem Schritt</h3>
+                  <p style={{ opacity: 0.9, fontSize: '1rem', margin: 0 }}>Von der ersten Beratung bis zur vollständigen Genesung begleiten wir Sie persönlich.</p>
                 </div>
-              </ScrollReveal>
-            ))}
+              </div>
+            </ScrollReveal>
+
+            {/* Timeline Column */}
+            <div className="timeline" style={{ margin: '0' }}>
+              {dict.journey.items.map((item, i) => (
+                <ScrollReveal key={i} delay={i * 150} direction="up" className="timeline-item interactive">
+                  <div className="timeline-dot"></div>
+                  <div className="timeline-card">
+                    <span style={{ color: 'var(--primary-color)', fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem', display: 'block' }}>{dict.journey.step_prefix} 0{i+1}</span>
+                    <h3 style={{ fontSize: '1.5rem', color: 'var(--secondary-color)', marginBottom: '1rem' }}>{item.title}</h3>
+                    <p style={{ color: 'var(--text-light)', fontSize: '1.05rem', margin: 0, lineHeight: 1.6 }}>{item.text}</p>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+            
           </div>
         </div>
       </section>

@@ -216,9 +216,7 @@ a {
 }
 
 .nav-links {
-  display: flex;
-  gap: 2.5rem;
-  align-items: center;
+  display: none; /* Hidden on desktop, we use .desktop-links instead */
 }
 
 .nav-links a:not(.btn) {
@@ -285,6 +283,7 @@ a {
   }
 
   .nav-links {
+    display: flex;
     position: fixed;
     top: 0;
     right: -100%;
