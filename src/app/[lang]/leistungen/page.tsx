@@ -35,8 +35,8 @@ export default async function Leistungen({ params }: { params: Promise<{ lang: '
         <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '8rem' }}>
           
           {/* DIAGNOSTICS */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '4rem', alignItems: 'center' }}>
-            <ScrollReveal direction="left" style={{ position: 'relative', height: '500px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 50px rgba(0,0,0,0.1)' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '4rem', alignItems: 'center' }}>
+            <ScrollReveal direction="left" style={{ position: 'relative', minHeight: '350px', height: '100%', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 50px rgba(0,0,0,0.1)' }}>
                 <Image src="/images/mri.png" alt="High-Tech Diagnostik" fill style={{ objectFit: 'cover' }} />
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.5), transparent)' }}></div>
             </ScrollReveal>
@@ -64,8 +64,8 @@ export default async function Leistungen({ params }: { params: Promise<{ lang: '
           </div>
 
           {/* THERAPY (Alternating) */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '4rem', alignItems: 'center', direction: 'rtl' }}>
-            <ScrollReveal direction="right" style={{ position: 'relative', height: '500px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 50px rgba(0,0,0,0.1)', direction: 'ltr' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '4rem', alignItems: 'center', direction: 'rtl' }}>
+            <ScrollReveal direction="right" style={{ position: 'relative', minHeight: '350px', height: '100%', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 50px rgba(0,0,0,0.1)', direction: 'ltr' }}>
                 <Image src="/images/image002.jpg" alt="Regenerative Therapie" fill style={{ objectFit: 'cover' }} />
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.5), transparent)' }}></div>
             </ScrollReveal>
@@ -93,8 +93,8 @@ export default async function Leistungen({ params }: { params: Promise<{ lang: '
           </div>
 
           {/* SURGERY */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '4rem', alignItems: 'center' }}>
-            <ScrollReveal direction="left" style={{ position: 'relative', height: '500px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 50px rgba(0,0,0,0.1)' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '4rem', alignItems: 'center' }}>
+            <ScrollReveal direction="left" style={{ position: 'relative', minHeight: '350px', height: '100%', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 50px rgba(0,0,0,0.1)' }}>
                 <Image src="/images/image014.jpg" alt="Operative Eingriffe" fill style={{ objectFit: 'cover' }} />
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.5), transparent)' }}></div>
             </ScrollReveal>

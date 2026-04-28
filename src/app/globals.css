@@ -110,8 +110,8 @@ a {
   }
   h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
-    hyphens: auto;
-    -webkit-hyphens: auto;
+    hyphens: none;
+    -webkit-hyphens: none;
     word-break: normal;
   }
 }
@@ -431,9 +431,11 @@ footer {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 2rem; /* space for scrollbar or visual balance */
-    margin-right: -2rem; /* bleed out of container */
-    padding-right: 2rem;
+    padding-bottom: 2rem;
+    margin-left: -1.2rem;
+    margin-right: -1.2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
   }
   .features-grid > div {
     min-width: 85vw;

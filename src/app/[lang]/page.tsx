@@ -20,7 +20,7 @@ export default async function Home({ params }: { params: Promise<{ lang: 'de'|'e
       <div className="ambient-orb" style={{ width: '500px', height: '500px', top: '40%', right: '-150px', background: 'var(--secondary-color)', animationDelay: '-5s' }}></div>
 
       {/* 1. HERO SECTION (Extreme Wow Factor) */}
-      <section className={styles.hero} style={{ height: '95vh', overflow: 'hidden' }}>
+      <section className={styles.hero} style={{ minHeight: '100svh', overflow: 'hidden', display: 'flex', alignItems: 'center' }}>
         {/* Parallax Background */}
         <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '120%', zIndex: -2, animation: 'slowZoom 20s infinite alternate' }}>
           <Image 
@@ -40,11 +40,11 @@ export default async function Home({ params }: { params: Promise<{ lang: 'de'|'e
             <div style={{ display: 'inline-block', padding: '0.4rem 1.2rem', border: '1px solid rgba(169, 144, 107, 0.5)', borderRadius: '30px', color: 'var(--primary-color)', fontSize: '0.9rem', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '1.5rem', background: 'rgba(0,0,0,0.2)', backdropFilter: 'blur(5px)' }}>
               {dict.hero.badge}
             </div>
-            <h1 style={{ color: 'white', fontSize: 'clamp(3.5rem, 5vw, 5.5rem)', lineHeight: 1.1, marginBottom: '2rem', textShadow: '0 10px 30px rgba(0,0,0,0.5)' }}>
+            <h1 style={{ color: 'white', fontSize: 'clamp(2.5rem, 8vw, 5.5rem)', lineHeight: 1.1, marginBottom: '2rem', textShadow: '0 10px 30px rgba(0,0,0,0.5)' }}>
               {dict.hero.title1} <br/>
               <span style={{ color: 'var(--primary-color)', fontFamily: 'var(--font-serif)', fontStyle: 'italic' }}>{dict.hero.title2}</span> {dict.hero.title3}
             </h1>
-            <p style={{ fontSize: '1.3rem', marginBottom: '3rem', opacity: 0.9, maxWidth: '650px', lineHeight: 1.7, fontWeight: 300 }}>
+            <p style={{ fontSize: 'clamp(1.1rem, 3vw, 1.3rem)', marginBottom: '3rem', opacity: 0.9, maxWidth: '650px', lineHeight: 1.7, fontWeight: 300 }}>
               {dict.hero.subtitle}
             </p>
             <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
@@ -149,7 +149,7 @@ export default async function Home({ params }: { params: Promise<{ lang: 'de'|'e
           </ScrollReveal>
           
           <ScrollReveal direction="left">
-            <TiltCard style={{ height: '500px', borderRadius: '30px', boxShadow: '0 30px 60px rgba(0,0,0,0.1)' }} className="interactive">
+            <TiltCard style={{ minHeight: '350px', height: '100%', borderRadius: '30px', boxShadow: '0 30px 60px rgba(0,0,0,0.1)' }} className="interactive">
               <Image 
                 src="/images/image004.jpg" 
                 alt="Medizinisches Team" 
@@ -315,7 +315,7 @@ export default async function Home({ params }: { params: Promise<{ lang: 'de'|'e
             </ScrollReveal>
 
             {/* Map Frame */}
-            <ScrollReveal direction="none" style={{ position: 'relative', minHeight: '500px' }} className="interactive">
+            <ScrollReveal direction="none" style={{ position: 'relative', minHeight: '350px' }} className="interactive">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.642598555139!2d24.148154877372295!3d56.95488107353974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfd15c898c69%3A0xa1aa42c0de1d601b!2sJ%C4%81%C5%86a%20Asara%20iela%203%2C%20Latgales%20priek%C5%A1pils%C4%93ta%2C%20R%C4%ABga%2C%20LV-1009%2C%20Lettland!5e0!3m2!1sde!2sde!4v1700000000000!5m2!1sde!2sde" 
                 width="100%" 
