@@ -136,7 +136,7 @@ export default async function Home({ params }: { params: Promise<{ lang: 'de'|'e
 
       {/* TEAM PREVIEW SECTION (With 3D Image Tilt) */}
       <section className="section" style={{ backgroundColor: 'var(--white)' }}>
-        <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '4rem', alignItems: 'center' }}>
+        <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '4rem', alignItems: 'center' }}>
           <ScrollReveal direction="right">
             <div style={{ position: 'relative', background: 'var(--bg-color)', borderRadius: '30px', padding: '4rem 3rem' }}>
               <div style={{ fontSize: '4rem', color: 'var(--primary-color)', lineHeight: 0.5, marginBottom: '2rem', fontFamily: 'var(--font-serif)' }}>"</div>
@@ -150,7 +150,7 @@ export default async function Home({ params }: { params: Promise<{ lang: 'de'|'e
             </div>
           </ScrollReveal>
           
-          <ScrollReveal direction="left" style={{ position: 'relative', minHeight: '400px', height: '100%', borderRadius: '30px', boxShadow: '0 30px 60px rgba(0,0,0,0.1)', overflow: 'hidden' }} className="interactive">
+          <ScrollReveal direction="left" style={{ position: 'relative', height: '400px', width: '100%', borderRadius: '30px', boxShadow: '0 30px 60px rgba(0,0,0,0.1)', overflow: 'hidden' }} className="interactive">
             <Image 
               src="/images/image010.jpg" 
               alt="Medizinisches Team" 
@@ -173,7 +173,7 @@ export default async function Home({ params }: { params: Promise<{ lang: 'de'|'e
             </div>
           </ScrollReveal>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '4rem', alignItems: 'flex-start' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '4rem', alignItems: 'flex-start' }}>
             
             {/* Visual Anchor (Sticky Image) */}
             <ScrollReveal direction="right" style={{ position: 'sticky', top: '120px' }} className="desktop-only-sticky">
@@ -247,7 +247,7 @@ export default async function Home({ params }: { params: Promise<{ lang: 'de'|'e
             </div>
           </ScrollReveal>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2.5rem', marginTop: '4rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2.5rem', marginTop: '4rem' }}>
             {dict.reviews.items.map((rev, i) => (
               <ScrollReveal key={i} delay={i * 150} direction="up" style={{ padding: '3rem 2.5rem', background: 'var(--bg-color)', borderRadius: '20px', border: '1px solid var(--border-color)', boxShadow: '0 15px 35px rgba(0,0,0,0.03)', position: 'relative' }} className="interactive">
                 <div style={{ color: '#f59e0b', fontSize: '1.4rem', marginBottom: '1.5rem', letterSpacing: '2px' }}>★★★★★</div>
