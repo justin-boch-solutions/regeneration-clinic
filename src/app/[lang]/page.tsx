@@ -28,6 +28,8 @@ export default async function Home({ params }: { params: Promise<{ lang: 'de'|'e
             alt="Premium Medical Facility" 
             fill
             priority
+            quality={100}
+            sizes="100vw"
             style={{ objectFit: 'cover' }}
           />
         </div>
@@ -154,6 +156,8 @@ export default async function Home({ params }: { params: Promise<{ lang: 'de'|'e
                 src="/images/image004.jpg" 
                 alt="Medizinisches Team" 
                 fill
+                quality={100}
+                sizes="(max-width: 768px) 100vw, 50vw"
                 style={{ objectFit: 'cover', borderRadius: '30px' }}
               />
             </TiltCard>

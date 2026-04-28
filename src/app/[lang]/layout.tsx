@@ -3,7 +3,6 @@ import '../globals.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
-import BottomTabBar from '@/components/BottomTabBar';
 import CustomCursor from '@/components/CustomCursor';
 
 export const metadata: Metadata = {
@@ -30,7 +29,6 @@ export default async function RootLayout({
       <body>
         <CustomCursor />
         <Navbar />
-        <BottomTabBar />
         
         <main>{children}</main>
 
@@ -43,6 +41,8 @@ export default async function RootLayout({
                   alt="Regeneration Clinic Logo" 
                   width={250} 
                   height={125} 
+                  quality={100}
+                  unoptimized
                   style={{ marginBottom: '1.5rem', marginLeft: '-15px', objectFit: 'contain' }}
                 />
                 <p style={{ color: '#cbd5e1', lineHeight: '1.6', fontSize: '0.95rem' }}>

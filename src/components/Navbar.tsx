@@ -48,6 +48,8 @@ export default function Navbar() {
             width={180} 
             height={90} 
             priority
+            quality={100}
+            unoptimized
             style={{ objectFit: 'contain', mixBlendMode: 'multiply' }}
           />
         </Link>
